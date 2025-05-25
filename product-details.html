@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto - Ale Carrari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+         <div class="header-content">
+            <div class="header-left">
+                <button class="menu-icon-btn" id="menuIcon" aria-label="Abrir menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="header-center">
+                 <a href="index.html" class="brand-logo-link">
+                    <span class="brand-logo-initials">AC</span>
+                    <span class="brand-name-full">Ale Carrari</span>
+                </a>
+            </div>
+            <div class="header-right">
+                <a href="cart.html" class="header-icon cart-icon-container" aria-label="Ver carrinho de compras">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <button class="close-btn" id="closeSidebar" aria-label="Fechar menu">&times;</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Perfil / Cadastro</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-bag"></i> Carrinho</a></li>
+                <li class="category-title">Produtos</li>
+                <li><a href="index.html#products-section" data-category="all">Todos os Produtos</a></li>
+                <li><a href="index.html#products-section" data-category="bolsas">Bolsas</a></li>
+                <li><a href="index.html#products-section" data-category="mochilas">Mochilas</a></li>
+                <li><a href="index.html#products-section" data-category="necessaires">Necessaires</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <div id="product-detail-container" class="product-detail-container">
+            <div class="product-image-column">
+                <img id="product-image" src="" alt="Imagem do produto">
+            </div>
+            <div class="product-info-column">
+                <h1 id="product-name" class="product-name-large">Nome do Produto</h1>
+                <p id="product-price" class="product-price-large">R$ 0,00</p>
+                <h3>Descrição</h3>
+                <p id="product-description">Descrição detalhada do produto...</p>
+                <div class="product-actions">
+                    <button id="add-to-cart-btn-detail" class="btn-primary">Adicionar ao Carrinho</button>
+                    <button id="buy-now-btn-detail" class="btn-secondary">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+        <section class="reviews-section">
+            <h2>Avaliações de Clientes</h2>
+            <div id="reviews-container" class="reviews-container">
+                </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Ale Carrari. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="toast-notification" class="toast-notification">
+        <p id="toast-message"></p>
+        <button id="toast-close-btn" class="toast-close-btn" aria-label="Fechar notificação">&times;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
