@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const products = [
         {
             id: 'p001', name: "Bolsa Elegante Couro", price: 199.90,
-            image: "/images/Bolsa_Elegante.png", category: 'bolsas',
+            image: "images/Bolsa_Elegante.png", category: 'bolsas',
             description: "Feita com couro legítimo de alta qualidade, esta bolsa elegante combina sofisticação e praticidade. Possui amplo espaço interno, forro em tecido nobre e detalhes metálicos dourados. Perfeita para o dia a dia ou ocasiões especiais.",
             reviews: [
                 { user: 'Carla S.', rating: 5, comment: 'Amei a bolsa! Muito mais bonita pessoalmente. Qualidade impecável.' },
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'p002', name: "Mochila Urbana", price: 149.90,
-            image: "/images/Mochila_Urbana.png", category: 'mochilas',
+            image: "images/Mochila_Urbana.png", category: 'mochilas',
             description: "A mochila urbana é ideal para quem busca estilo e conforto. Com design moderno, múltiplos compartimentos e alças ajustáveis, ela é perfeita para carregar seus pertences com segurança e praticidade, seja para o trabalho, estudo ou lazer.",
             reviews: [
                 { user: 'Pedro L.', rating: 5, comment: 'Excelente mochila, muito resistente e espaçosa.' }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'p003', name: "Necessaire Viagem", price: 59.90,
-            image: "/images/Necessaire_Viagem.png", category: 'necessaires',
+            image: "images/Necessaire_Viagem.png", category: 'necessaires',
             description: "Leve seus itens de higiene e beleza com organização e charme. Esta necessaire de viagem é compacta, feita com material resistente à água e possui divisórias internas para facilitar o acesso aos seus produtos.",
             reviews: [
                 { user: 'Ana B.', rating: 5, comment: 'Muito prática e o material parece ser bom.' },
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'p004', name: "Bolsa Transversal", price: 129.90,
-            image: "/images/Bolsa_Transversal.png", category: 'bolsas',
+            image: "images/Bolsa_Transversal.png", category: 'bolsas',
             description: "Prática e versátil, a bolsa transversal é um acessório indispensável. Este modelo conta com alça regulável, fecho seguro e um design minimalista que combina com diversos looks. Ideal para quem gosta de ter as mãos livres.",
             reviews: [
                 { user: 'Laura F.', rating: 5, comment: 'Adorei! Super estilosa e prática.' }
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'p005', name: "Mochila Escolar", price: 179.90,
-            image: "/images/Mochila_Escolar.png", category: 'mochilas',
+            image: "images/Mochila_Escolar.png", category: 'mochilas',
             description: "A mochila escolar perfeita para acompanhar a rotina de estudos. Com amplo espaço para livros e cadernos, bolsos laterais para garrafas e um compartimento frontal para itens menores. Material durável e design jovem.",
             reviews: [
                 { user: 'Mariana P.', rating: 5, comment: 'Minha filha amou! Cabe tudo e é bem confortável.' }
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 'p006', name: "Necessaire Maquiagem", price: 49.90,
-            image: "/images/Necessaire_Maquiagem.png", category: 'necessaires',
+            image: "images/Necessaire_Maquiagem.png", category: 'necessaires',
             description: "Mantenha suas maquiagens organizadas com esta necessaire compacta e elegante. Possui um espelho interno e elásticos para prender pincéis. Perfeita para levar na bolsa ou em viagens.",
             reviews: [
                 { user: 'Gabriela C.', rating: 4, comment: 'Bonita e útil, bom tamanho para o dia a dia.' }

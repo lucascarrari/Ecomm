@@ -70,7 +70,7 @@ ul {
 }
 
 #hero-banner-image {
-    background-image: url('/images/Banner.png'); /* Caminho local atualizado */
+    background-image: url('images/Banner.png'); /* Caminho local atualizado */
     position: absolute;
     top: 0;
     left: 0;
