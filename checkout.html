@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Ale Carrari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="luxury-header">
+        <div class="header-left">
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="header-center">
+            <h1 class="brand-logo">Ale Carrari</h1>
+        </div>
+        <div class="header-right">
+            <a href="#" class="header-icon"><i class="fas fa-search"></i></a>
+            <a href="cart.html" class="header-icon cart-icon-container">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <span class="close-btn" id="closeSidebar">&times;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Perfil / Cadastro</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-bag"></i> Carrinho</a></li>
+                <li class="category-title">Produtos</li>
+                <li><a href="index.html" data-category="all">Todos os Produtos</a></li>
+                <li><a href="index.html" data-category="bolsas">Bolsas</a></li>
+                <li><a href="index.html" data-category="mochilas">Mochilas</a></li>
+                <li><a href="index.html" data-category="necessaries">Necessaires</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <section class="checkout-section">
+            <h2>Finalizar Compra</h2>
+
+            <div class="checkout-steps">
+                <div class="step active" id="step-address">1. Endereço</div>
+                <div class="step" id="step-payment">2. Pagamento</div>
+                <div class="step" id="step-confirmation">3. Confirmação</div>
+            </div>
+
+            <div id="checkout-address" class="checkout-step-content active-step">
+                <h3>Confirme seu Endereço de Entrega</h3>
+                <form id="addressForm">
+                    <div class="form-group">
+                        <label for="checkoutFullName">Nome Completo:</label>
+                        <input type="text" id="checkoutFullName" name="checkoutFullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutCep">CEP:</label>
+                        <input type="text" id="checkoutCep" name="checkoutCep" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutAddress">Rua/Avenida:</label>
+                        <input type="text" id="checkoutAddress" name="checkoutAddress" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutNumber">Número:</label>
+                        <input type="text" id="checkoutNumber" name="checkoutNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutComplement">Complemento (Opcional):</label>
+                        <input type="text" id="checkoutComplement" name="checkoutComplement">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutNeighborhood">Bairro:</label>
+                        <input type="text" id="checkoutNeighborhood" name="checkoutNeighborhood" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutCity">Cidade:</label>
+                        <input type="text" id="checkoutCity" name="checkoutCity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkoutState">Estado:</label>
+                        <input type="text" id="checkoutState" name="checkoutState" required>
+                    </div>
+                    <button type="submit" class="btn-next-step">Continuar para Pagamento</button>
+                </form>
+            </div>
+
+            <div id="checkout-payment" class="checkout-step-content">
+                <h3>Escolha a Forma de Pagamento</h3>
+                <form id="paymentForm">
+                    <div class="form-group payment-option">
+                        <input type="radio" id="paymentCreditCard" name="paymentMethod" value="credit_card" checked>
+                        <label for="paymentCreditCard"><i class="fas fa-credit-card"></i> Cartão de Crédito</label>
+                        <div id="credit-card-details" class="payment-details">
+                            <input type="text" placeholder="Número do Cartão" required>
+                            <input type="text" placeholder="Nome no Cartão" required>
+                            <input type="text" placeholder="Validade (MM/AA)" required>
+                            <input type="text" placeholder="CVV" required>
+                        </div>
+                    </div>
+                    <div class="form-group payment-option">
+                        <input type="radio" id="paymentPix" name="paymentMethod" value="pix">
+                        <label for="paymentPix"><i class="fas fa-qrcode"></i> Pix</label>
+                        <div id="pix-details" class="payment-details hidden">
+                            <p>Você será redirecionado para gerar o código Pix após a confirmação.</p>
+                        </div>
+                    </div>
+                    <div class="form-group payment-option">
+                        <input type="radio" id="paymentBoleto" name="paymentMethod" value="boleto">
+                        <label for="paymentBoleto"><i class="fas fa-barcode"></i> Boleto Bancário</label>
+                        <div id="boleto-details" class="payment-details hidden">
+                            <p>O boleto será gerado após a confirmação da compra.</p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-prev-step">Voltar</button>
+                    <button type="submit" class="btn-next-step">Finalizar Pedido</button>
+                </form>
+            </div>
+
+            <div id="checkout-confirmation" class="checkout-step-content">
+                <h3>Pedido Confirmado!</h3>
+                <div class="confirmation-message">
+                    <p><i class="fas fa-check-circle"></i> Seu pedido na Ale Carrari foi realizado com sucesso!</p>
+                    <p>Um e-mail de confirmação com os detalhes da sua compra (incluindo número do pedido e informações de rastreamento - se fosse um site real) será enviado para seu endereço de e-mail cadastrado.</p>
+                    <p>Agradecemos a preferência!</p>
+                    <p>Número do Pedido: <span id="order-number">#000000</span></p>
+                </div>
+                <button class="btn-back-to-home" onclick="location.href='index.html'">Voltar para a Loja</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ale Carrari. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

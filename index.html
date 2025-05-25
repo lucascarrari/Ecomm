@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ale Carrari - Bolsas e Acessórios</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="luxury-header">
+        <div class="header-left">
+            <div class="menu-icon" id="menuIcon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="header-center">
+            <h1 class="brand-logo">Ale Carrari</h1>
+        </div>
+        <div class="header-right">
+            <a href="#" class="header-icon"><i class="fas fa-search"></i></a>
+            <a href="cart.html" class="header-icon cart-icon-container">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <span class="close-btn" id="closeSidebar">&times;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Perfil / Cadastro</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-bag"></i> Carrinho</a></li>
+                <li class="category-title">Produtos</li>
+                <li><a href="#" data-category="all">Todos os Produtos</a></li>
+                <li><a href="#" data-category="bolsas">Bolsas</a></li>
+                <li><a href="#" data-category="mochilas">Mochilas</a></li>
+                <li><a href="#" data-category="necessaries">Necessaires</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <section class="hero-banner">
+            <h2>Ale Carrari: Acessórios que transformam seu estilo</h2>
+            <p>Descubra nossa coleção exclusiva de bolsas e muito mais.</p>
+            <a href="#products-section" class="btn-shop-now">Compre Agora</a>
+        </section>
+
+        <section id="products-section" class="products-section">
+            <div class="search-filter-area">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Pesquisar produtos...">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-dropdown">
+                    <button class="filter-btn" id="filterButton">Filtro de Busca <i class="fas fa-chevron-down"></i></button>
+                    <div class="filter-content" id="filterContent">
+                        <label><input type="checkbox" value="couro"> Couro</label>
+                        <label><input type="checkbox" value="tecido"> Tecido</label>
+                        <label><input type="checkbox" value="pequena"> Pequena</label>
+                        <label><input type="checkbox" value="grande"> Grande</label>
+                        <button class="apply-filter-btn">Aplicar Filtro</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <div class="product-card" data-id="p001" data-category="bolsas" data-name="Bolsa Elegante Couro" data-price="199.90">
+                    <img src="https://via.placeholder.com/250x250?text=Bolsa+Elegante" alt="Bolsa Elegante">
+                    <h3>Bolsa Elegante Couro</h3>
+                    <p>R$ 199,90</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card" data-id="p002" data-category="mochilas" data-name="Mochila Urbana" data-price="149.90">
+                    <img src="https://via.placeholder.com/250x250?text=Mochila+Urbana" alt="Mochila Urbana">
+                    <h3>Mochila Urbana</h3>
+                    <p>R$ 149,90</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card" data-id="p003" data-category="necessaries" data-name="Necessaire Viagem" data-price="59.90">
+                    <img src="https://via.placeholder.com/250x250?text=Necessaire+Viagem" alt="Necessaire Viagem">
+                    <h3>Necessaire Viagem</h3>
+                    <p>R$ 59,90</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product-card" data-id="p004" data-category="bolsas" data-name="Bolsa Transversal" data-price="129.90">
+                    <img src="https://via.placeholder.com/250x250?text=Bolsa+Transversal" alt="Bolsa Transversal">
+                    <h3>Bolsa Transversal</h3>
+                    <p>R$ 129,90</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                 <div class="product-card" data-id="p005" data-category="mochilas" data-name="Mochila Escolar" data-price="179.90">
+                    <img src="https://via.placeholder.com/250x250?text=Mochila+Escolar" alt="Mochila Escolar">
+                    <h3>Mochila Escolar</h3>
+                    <p>R$ 179,90</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+                 <div class="product-card" data-id="p006" data-category="necessaries" data-name="Necessaire Maquiagem" data-price="49.90">
+                    <img src="https://via.placeholder.com/250x250?text=Necessaire+Maquiagem" alt="Necessaire Maquiagem">
+                    <h3>Necessaire Maquiagem</h3>
+                    <p>R$ 49,90</p>
+                    <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ale Carrari. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

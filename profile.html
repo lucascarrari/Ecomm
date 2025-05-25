@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil / Cadastro - Ale Carrari</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" id="menuIcon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <h1>Ale Carrari</h1>
+        <div class="header-icons">
+            <a href="#" class="header-icon"><i class="fas fa-search"></i></a>
+            <a href="cart.html" class="header-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count" class="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+            <span class="close-btn" id="closeSidebar">&times;</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Perfil / Cadastro</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                <li class="category-title">Produtos</li>
+                <li><a href="index.html" data-category="all">Todos os Produtos</a></li>
+                <li><a href="index.html" data-category="bolsas">Bolsas</a></li>
+                <li><a href="index.html" data-category="mochilas">Mochilas</a></li>
+                <li><a href="index.html" data-category="necessaries">Necessaires</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <section class="profile-section">
+            <h2>Meu Perfil / Cadastro</h2>
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="fullName">Nome Completo:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmar Senha:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+
+                <h3>Endereço Principal</h3>
+                <div class="form-group">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Rua/Avenida:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Número:</label>
+                    <input type="text" id="number" name="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="complement">Complemento (Opcional):</label>
+                    <input type="text" id="complement" name="complement">
+                </div>
+                <div class="form-group">
+                    <label for="neighborhood">Bairro:</label>
+                    <input type="text" id="neighborhood" name="neighborhood" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Cidade:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">Estado:</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+                
+                <button type="submit" class="btn-save-profile">Salvar Cadastro</button>
+                <p id="profile-message" class="hidden-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ale Carrari. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
